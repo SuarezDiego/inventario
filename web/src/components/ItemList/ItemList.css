@@ -1,0 +1,77 @@
+.card-header {
+    text-align: center;
+    padding: 5px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: var(--primary-color);
+}
+
+.icon-search {
+    padding-left: 5px;
+    font-size: 20px;
+    color: var(--secondary-color);
+}
+
+.input {
+    width: 100%;
+    height: 2rem;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-size: 16px;
+}
+
+.input::placeholder {
+    color: var(--secondary-color);
+}
+
+.list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.listItem {
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    background-color: var(--secondary-color);
+    cursor: pointer;
+}
+
+.listItem:hover {
+    background-color: var(--accent-color);
+}
+
+.listItemActive {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.icon-lupa {
+    margin-left: 5px;
+    margin-right: 8px;
+    font-size: 20px;
+    color: var(--secondary-color);
+}
+
+.contenedor {
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+@media (max-width: 768px) {
+    .contenedor {
+        max-height: 40vh;
+        overflow-y: auto;
+    }
+}

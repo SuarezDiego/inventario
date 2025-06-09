@@ -1,0 +1,44 @@
+.header {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    box-sizing: border-box;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    margin-left: auto;
+}
+
+.title {
+    margin: 0;
+}
+
+.navList {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navLink {
+    margin-left: 15px;
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.navLink.active {
+    color: var(--accent-color);
+    font-weight: bold;
+}
+
+.navLink:hover {
+    color: var(--accent-color);
+}
