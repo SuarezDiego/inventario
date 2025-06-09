@@ -21,16 +21,16 @@ export const Stadistic: React.FC<StadisticProps> = ({ showcase, warehouse, sales
             {
                 data: values,
                 backgroundColor: [
-                    'rgba(255, 99, 132, 0.5)',
-                    'rgba(54, 162, 235, 0.5)',
-                    'rgba(255, 206, 86, 0.5)',
-                    'rgba(255, 255, 86, 0.5)'
+                    "#5a789c",
+                    "#9aa5c4",
+                    "#c7b8d6",
+                    "#7a6d91"
                 ],
                 borderColor: [
-                    'rgba(255, 99, 132, 1)',
-                    'rgba(54, 162, 235, 1)',
-                    'rgba(255, 206, 86, 1)',
-                    'rgba(255, 255, 86, 0.5)'
+                    "#5a789c",
+                    "#9aa5c4",
+                    "#c7b8d6",
+                    "#7a6d91"
                 ],
                 borderWidth: 1,
             }
