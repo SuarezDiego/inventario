@@ -28,6 +28,11 @@
     color: var(--secondary-color);
 }
 
+.input:focus {
+    outline: none;
+    box-shadow: none;
+}
+
 .list {
     list-style-type: none;
     padding: 0;
