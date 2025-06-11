@@ -11,6 +11,11 @@ interface StadisticProps {
     in_delivery: number;
 }
 
+/**
+ * Componente Stadistic que muestra un gráfico circular con las estadísticas de inventario.
+ * @param {StadisticProps} props - Propiedades del componente Stadistic.
+ * @returns El componente Stadistic que muestra un gráfico circular con las estadísticas de inventario.
+ */
 export const Stadistic: React.FC<StadisticProps> = ({ showcase, warehouse, sales, in_delivery }) => {
     const values = [showcase, warehouse, sales, in_delivery];
     const total = values.reduce((acc, value) => acc + value, 0);

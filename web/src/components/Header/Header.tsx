@@ -2,6 +2,10 @@ import React from 'react';
 import { useLocation } from 'react-router-dom';
 import './Header.css';
 
+/**
+ * Componente Header que muestra el título y la navegación de la aplicación.
+ * @returns El componente Header que muestra el título y la navegación de la aplicación.
+ */
 export const Header: React.FC = () => {
     const location = useLocation();
 

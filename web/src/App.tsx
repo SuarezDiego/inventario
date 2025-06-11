@@ -6,6 +6,10 @@ import { Header } from "./components/Header/Header";
 import { Home } from './components/Home/Home';
 import './style.css';
 
+/**
+ * Componente principal de la aplicación que define las rutas y estructura general.
+ * @returns El componente principal de la aplicación que define las rutas y estructura general.
+ */
 export const App: React.FC = () => {
     return (
         <Router>

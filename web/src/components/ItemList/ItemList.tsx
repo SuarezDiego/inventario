@@ -9,6 +9,11 @@ interface ItemListProps {
     activateItem: Function;
 }
 
+/**
+ * Componente ItemList que muestra una lista de items con una barra de búsqueda.
+ * @param {ItemListProps} props - Propiedades del componente que incluyen los items, el item activo y la función para activar un item.
+ * @returns El componente ItemList que muestra una lista de items con una barra de búsqueda.
+**/
 export const ItemList: React.FC<ItemListProps> = ({ items, activeItem, activateItem }) => {
     const [searchTerm, setSearchTerm] = useState('');
 

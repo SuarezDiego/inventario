@@ -6,6 +6,10 @@ import type { ItemData } from '../../models/ItemData';
 import { useFetchItems } from '../../hooks/useFetchItems';
 import { FaSpinner } from 'react-icons/fa';
 
+/**
+ * Componente principal del Dashboard que muestra una lista de items y un item activo.
+ * @returns El componente Dashboard que muestra una lista de items y un item activo.
+ */
 export const Dashboard: React.FC = () => {
     const { items, isLoading } = useFetchItems();
     const [activeItem, setActiveItem] = useState<ItemData | null>(null);

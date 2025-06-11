@@ -1,3 +1,6 @@
+/**
+ * ItemData interface represents the structure of an item in the inventory system.
+ */
 export interface ItemData {
     id: number;
     code: string;

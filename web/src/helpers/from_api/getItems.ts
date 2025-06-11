@@ -1,7 +1,10 @@
 import { API_URL } from "../../config";
 import type { ItemData } from "../../models/ItemData";
 
-
+/**
+ * Obtiene una lista de items desde la API.
+ * @returns Una lista de items obtenida desde la API.
+ */
 export const getItems = async (): Promise<ItemData[]> => {
     try {
 
