@@ -19,6 +19,9 @@ Base = declarative_base()
 
 
 def get_db():
+    """
+    Crea una sesión de base de datos y la cierra al finalizar.
+    """
     db: Session = SessionLocal()
     try:
         yield db

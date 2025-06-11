@@ -3,6 +3,9 @@ from database import Base
 
 
 class Item(Base):
+    """
+    Modelo de Item que representa un artículo en el inventario.
+    """
     __tablename__ = 'items'
 
     id = Column(Integer, primary_key=True, autoincrement=True)
