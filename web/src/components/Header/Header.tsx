@@ -1,6 +1,7 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
 import './Header.css';
+import { ADD_ITEM, HOME, INVENTORY } from '../../constants/routes';
 
 /**
  * Componente Header que muestra el título y la navegación de la aplicación.
@@ -16,16 +17,24 @@ export const Header: React.FC = () => {
                 <ul className="navList">
                     <li>
                         <a
-                            href="/"
-                            className={`navLink ${location.pathname === '/' ? 'active' : ''}`}
+                            href={HOME}
+                            className={`navLink ${location.pathname === HOME ? 'active' : ''}`}
                         >
                             Inicio
                         </a>
                     </li>
                     <li>
                         <a
-                            href="/inventory"
-                            className={`navLink ${location.pathname === '/inventory' ? 'active' : ''}`}
+                            href={ADD_ITEM}
+                            className={`navLink ${location.pathname === ADD_ITEM ? 'active' : ''}`}
+                        >
+                            Agregar Item
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href={INVENTORY}
+                            className={`navLink ${location.pathname === INVENTORY ? 'active' : ''}`}
                         >
                             Inventario
                         </a>
