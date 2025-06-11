@@ -18,6 +18,13 @@ body {
     margin: 0;
 }
 
+textarea,
+input,
+button,
+select {
+    font-family: 'Arial', sans-serif;
+}
+
 #root {
     display: flex;
     flex-direction: column;

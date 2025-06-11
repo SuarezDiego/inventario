@@ -28,7 +28,7 @@ export const Header: React.FC = () => {
                             href={ADD_ITEM}
                             className={`navLink ${location.pathname === ADD_ITEM ? 'active' : ''}`}
                         >
-                            Agregar Item
+                            Agregar Ítem
                         </a>
                     </li>
                     <li>
