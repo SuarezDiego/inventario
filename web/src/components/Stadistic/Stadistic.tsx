@@ -61,16 +61,14 @@ export const Stadistic: React.FC<StadisticProps> = ({ showcase, warehouse, sales
                             fillStyle: data.datasets[0].backgroundColor[index],
                             strokeStyle: data.datasets[0].borderColor[index],
                             lineWidth: data.datasets[0].borderWidth,
-                            hidden: chart.getDatasetMeta(0).data[index].hidden || false, // Respetar el estado oculto
+                            hidden: chart.getDatasetMeta(0).data[index].hidden || false,
                             index,
                         }));
                     },
-                    boxWidth: 20, // Ajustar el tamaño de los cuadros de color
-                    padding: 10, // Espaciado entre elementos
+                    boxWidth: 20,
+                    padding: 10,
                 },
-                // position: "top", // Posición del legend
-                // align: "start", // Justificar el legend al inicio
-                onClick: (e: any, legendItem: any, legend: any) => {
+                onClick: (_e: any, legendItem: any, legend: any) => {
                     const index = legendItem.index;
                     const chart = legend.chart;
                     const meta = chart.getDatasetMeta(0);
