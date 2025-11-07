@@ -11,8 +11,8 @@
 }
 
 .g-container {
-    background: linear-gradient(to top right, var(--background-color), var(--secondary-color));
-    color: var(--text-color);
+    background: linear-gradient(to top right, var(--ice-100), var(--ice-50));
+    color: var(--navy-900);
     padding: 0px;
     border-radius: 10px;
     box-shadow: -5px 7px 5px rgba(0, 0, 0, 0.5);

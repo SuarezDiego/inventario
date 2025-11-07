@@ -3,13 +3,13 @@
     padding: 5px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    background-color: var(--primary-color);
+    background-color: var(--navy-800);
 }
 
 .icon-search {
     padding-left: 5px;
     font-size: 20px;
-    color: var(--secondary-color);
+    color: var(--ice-50);
 }
 
 .input {
@@ -19,13 +19,13 @@
     margin-bottom: 5px;
     border-radius: 10px;
     border: none;
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
+    background-color: var(--navy-800);
+    color: var(--ice-50);
     font-size: 16px;
 }
 
 .input::placeholder {
-    color: var(--secondary-color);
+    color: var(--gray-300);
 }
 
 .input:focus {
@@ -42,17 +42,17 @@
     padding: 10px;
     margin-bottom: 5px;
     border-radius: 4px;
-    background-color: var(--secondary-color);
+    background-color: var(--ice-100);
     cursor: pointer;
 }
 
 .listItem:hover {
-    background-color: var(--accent-color);
+    background-color: var(--gray-300);
 }
 
 .listItemActive {
-    background-color: var(--accent-color);
-    color: var(--primary-color);
+    background-color: var(--gray-300);
+    color: var(--navy-800);
     font-weight: bold;
 }
 
@@ -65,7 +65,7 @@
     margin-left: 5px;
     margin-right: 8px;
     font-size: 20px;
-    color: var(--secondary-color);
+    color: var(--ice-50);
 }
 
 .contenedor {

@@ -1,10 +1,10 @@
 .main-container {
     text-align: center;
-    background: linear-gradient(to top right, var(--background-color), var(--secondary-color));
-    color: var(--text-color);
+    background: linear-gradient(to top right, var(--ice-100), var(--ice-50));
+    color: var(--navy-900);
     padding: 0px;
     border-radius: 10px;
-    box-shadow: -5px 7px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: -5px 7px 5px  var(--gray-300);
     margin: 2% 25% 2% 25%;
 }
 
@@ -49,8 +49,8 @@ label {
     width: 80%;
     padding: 10px;
     font-size: 16px;
-    background-color: var(--primary-color);
-    color: white;
+    background-color: var(--navy-800);
+    color: var(--ice-50);
     border: none;
     border-radius: 4px;
     cursor: pointer;
