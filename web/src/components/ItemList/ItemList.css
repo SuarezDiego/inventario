@@ -1,82 +1,82 @@
 .card-header {
-    text-align: center;
-    padding: 5px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    background-color: var(--navy-800);
+  text-align: center;
+  padding: 5px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: var(--navy-800);
 }
 
 .icon-search {
-    padding-left: 5px;
-    font-size: 20px;
-    color: var(--ice-50);
+  padding-left: 5px;
+  font-size: 20px;
+  color: var(--ice-50);
 }
 
 .input {
-    width: 100%;
-    height: 2rem;
-    padding: 10px;
-    margin-bottom: 5px;
-    border-radius: 10px;
-    border: none;
-    background-color: var(--navy-800);
-    color: var(--ice-50);
-    font-size: 16px;
+  width: 100%;
+  height: 2rem;
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--navy-800);
+  color: var(--ice-50);
+  font-size: 16px;
 }
 
 .input::placeholder {
-    color: var(--gray-300);
+  color: var(--gray-300);
 }
 
 .input:focus {
-    outline: none;
-    box-shadow: none;
+  outline: none;
+  box-shadow: none;
 }
 
 .list {
-    list-style-type: none;
-    padding: 0;
+  list-style-type: none;
+  padding: 0;
 }
 
 .listItem {
-    padding: 10px;
-    margin-bottom: 5px;
-    border-radius: 4px;
-    background-color: var(--ice-100);
-    cursor: pointer;
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 4px;
+  background-color: var(--ice-100);
+  cursor: pointer;
 }
 
 .listItem:hover {
-    background-color: var(--gray-300);
+  background-color: var(--gray-300);
 }
 
 .listItemActive {
-    background-color: var(--gray-300);
-    color: var(--navy-800);
-    font-weight: bold;
+  background-color: var(--gray-300);
+  color: var(--navy-800);
+  font-weight: bold;
 }
 
 .search-container {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .icon-lupa {
-    margin-left: 5px;
-    margin-right: 8px;
-    font-size: 20px;
-    color: var(--ice-50);
+  margin-left: 5px;
+  margin-right: 8px;
+  font-size: 20px;
+  color: var(--ice-50);
 }
 
 .contenedor {
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
 }
 
 @media (max-width: 768px) {
-    .contenedor {
-        max-height: 40vh;
-        overflow-y: auto;
-    }
+  .contenedor {
+    max-height: 40vh;
+    overflow-y: auto;
+  }
 }

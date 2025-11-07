@@ -1,44 +1,44 @@
 .header {
-    background-color: var(--navy-900);
-    color: var(--ice-50);
-    box-sizing: border-box;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 60px;
-    width: 100%;
-    position: sticky;
-    top: 0;
-    z-index: 100;
+  background-color: var(--navy-900);
+  color: var(--ice-50);
+  box-sizing: border-box;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 nav {
-    margin-left: auto;
+  margin-left: auto;
 }
 
 .title {
-    margin: 0;
+  margin: 0;
 }
 
 .navList {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
 }
 
 .navLink {
-    margin-left: 15px;
-    color: var(--ice-100);
-    text-decoration: none;
+  margin-left: 15px;
+  color: var(--ice-100);
+  text-decoration: none;
 }
 
 .navLink.active {
-    color: var(--azure-400);
-    font-weight: bold;
+  color: var(--azure-400);
+  font-weight: bold;
 }
 
 .navLink:hover {
-    color: var(--azure-400);
+  color: var(--azure-400);
 }

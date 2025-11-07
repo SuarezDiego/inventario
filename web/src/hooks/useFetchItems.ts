@@ -7,16 +7,16 @@ import type { ItemData } from "../models/ItemData";
  * @returns Un objeto que contiene los items obtenidos de la API y un estado de carga.
  */
 export const useFetchItems = () => {
-    const [items, setItems] = useState<ItemData[]>([]);
-    const [isLoading, setIsLoading] = useState<boolean>(true);
-    const fetchItems = async () => {
-        const newItems = await getItems();
-        setItems(newItems);
-        setIsLoading(false);
-    }
+  const [items, setItems] = useState<ItemData[]>([]);
+  const [isLoading, setIsLoading] = useState<boolean>(true);
+  const fetchItems = async () => {
+    const newItems = await getItems();
+    setItems(newItems);
+    setIsLoading(false);
+  }
 
-    useEffect(() => {
-        fetchItems();
-    }, []);
-    return { items, isLoading };
+  useEffect(() => {
+    fetchItems();
+  }, []);
+  return { items, isLoading };
 }

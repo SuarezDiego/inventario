@@ -6,11 +6,11 @@ import './Footer.css';
  * @returns El componente Footer que muestra información de derechos de autor.
  */
 const Footer: React.FC = () => {
-    return (
-        <footer className="footer">
-            <p>Propiedad de Diego Suárez.</p>
-        </footer>
-    );
+  return (
+    <footer className="footer">
+      <p>Propiedad de Diego Suárez.</p>
+    </footer>
+  );
 };
 
 export default Footer;

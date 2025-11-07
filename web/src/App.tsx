@@ -13,15 +13,15 @@ import { HOME, ADD_ITEM, INVENTORY } from './constants/routes';
  * @returns El componente principal de la aplicación que define las rutas y estructura general.
  */
 export const App: React.FC = () => {
-    return (
-        <Router>
-            <Header />
-            <Routes>
-                <Route path={HOME} element={<Home />} />
-                <Route path={ADD_ITEM} element={<AddItem />} />
-                <Route path={INVENTORY} element={<Dashboard />} />
-            </Routes>
-            <Footer />
-        </Router>
-    );
+  return (
+    <Router>
+      <Header />
+      <Routes>
+        <Route path={HOME} element={<Home />} />
+        <Route path={ADD_ITEM} element={<AddItem />} />
+        <Route path={INVENTORY} element={<Dashboard />} />
+      </Routes>
+      <Footer />
+    </Router>
+  );
 };

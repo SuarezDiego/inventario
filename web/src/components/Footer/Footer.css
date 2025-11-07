@@ -1,9 +1,9 @@
 .footer {
-    width: 100%;
-    background-color: var(--navy-900);
-    color: var(--ice-50);
-    text-align: center;
-    padding: 10px 0;
-    margin-top: auto;
-    margin-bottom: 0px;
+  width: 100%;
+  background-color: var(--navy-900);
+  color: var(--ice-50);
+  text-align: center;
+  padding: 10px 0;
+  margin-top: auto;
+  margin-bottom: 0px;
 }

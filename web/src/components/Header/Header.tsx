@@ -8,39 +8,39 @@ import { ADD_ITEM, HOME, INVENTORY } from '../../constants/routes';
  * @returns El componente Header que muestra el título y la navegación de la aplicación.
  */
 export const Header: React.FC = () => {
-    const location = useLocation();
+  const location = useLocation();
 
-    return (
-        <header className="header">
-            <h1 className="title">Inventario</h1>
-            <nav>
-                <ul className="navList">
-                    <li>
-                        <a
-                            href={HOME}
-                            className={`navLink ${location.pathname === HOME ? 'active' : ''}`}
-                        >
-                            Inicio
-                        </a>
-                    </li>
-                    <li>
-                        <a
-                            href={ADD_ITEM}
-                            className={`navLink ${location.pathname === ADD_ITEM ? 'active' : ''}`}
-                        >
-                            Agregar Ítem
-                        </a>
-                    </li>
-                    <li>
-                        <a
-                            href={INVENTORY}
-                            className={`navLink ${location.pathname === INVENTORY ? 'active' : ''}`}
-                        >
-                            Inventario
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-    );
+  return (
+    <header className="header">
+      <h1 className="title">Inventario</h1>
+      <nav>
+        <ul className="navList">
+          <li>
+            <a
+              href={HOME}
+              className={`navLink ${location.pathname === HOME ? 'active' : ''}`}
+            >
+              Inicio
+            </a>
+          </li>
+          <li>
+            <a
+              href={ADD_ITEM}
+              className={`navLink ${location.pathname === ADD_ITEM ? 'active' : ''}`}
+            >
+              Agregar Ítem
+            </a>
+          </li>
+          <li>
+            <a
+              href={INVENTORY}
+              className={`navLink ${location.pathname === INVENTORY ? 'active' : ''}`}
+            >
+              Inventario
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  );
 };
