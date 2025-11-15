@@ -3,6 +3,7 @@ import { useLocation } from 'react-router-dom';
 import './Header.css';
 import { ADD_ITEM, HOME, INVENTORY } from '../../constants/routes';
 import { useTheme } from '../../hooks/useTheme';
+import logo from '../../assets/logos/logo.svg';
 
 /**
  * Componente Header que muestra el título y la navegación de la aplicación.
@@ -14,7 +15,13 @@ export const Header: React.FC = () => {
 
   return (
     <header className="header">
-      <h1 className="title">Inventario</h1>
+      <div className="logo-container">
+        <img
+          src={logo}
+          alt="Inventario"
+          className="header-logo"
+        />
+      </div>
       <nav>
         <ul className="navList">
           <li>

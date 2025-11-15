@@ -6,7 +6,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 60px;
+  height: 70px;
   width: 100%;
   position: sticky;
   top: 0;
@@ -15,15 +15,26 @@
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-nav {
-  margin-left: auto;
+.logo-container {
+  display: flex;
+  align-items: center;
+  height: 100%;
 }
 
-.title {
-  margin: 0;
-  font-size: 24px;
-  font-weight: bold;
-  letter-spacing: 0.5px;
+.header-logo {
+  height: 50px;
+  width: auto;
+  object-fit: contain;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.header-logo:hover {
+  transform: scale(1.05);
+}
+
+nav {
+  margin-left: auto;
 }
 
 .navList {
