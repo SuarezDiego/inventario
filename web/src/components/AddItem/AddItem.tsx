@@ -108,7 +108,7 @@ export const AddItem: React.FC = () => {
           <textarea
             id="itemDescription"
             name="description"
-            placeholder="Grado largo."
+            placeholder="Grano largo."
             rows={4}
             value={formData.description}
             onChange={handleChange}
