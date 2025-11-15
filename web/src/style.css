@@ -12,6 +12,38 @@
   --color-success: #3BB273;
   --color-warning: #E6A700;
   --color-error: #D64545;
+
+  --header-bg: #0C2B4E;
+  --header-text: #F7FAFD;
+
+  --footer-bg: #0C2B4E;
+  --footer-text: #F7FAFD;
+
+  --theme-toggle-bg: #2A4870;
+  --theme-toggle-border: #4F9FFF;
+  --toggle-slider-bg: #F7FAFD;
+}
+
+html.dark {
+  --navy-900: #E6ECF5;
+  --navy-800: #A8C0E0;
+  --slate-700: #AABAD0;
+  --ice-50: #0B1829;
+  --ice-100: #13263F;
+  --gray-300: #2B3C55;
+  --blue-500: #4F9FFF;
+  --blue-600: #80BFFF;
+  --azure-400: #7AB6FF;
+
+  --header-bg: #0C2B4E;
+  --header-text: #F7FAFD;
+
+  --footer-bg: #0C2B4E;
+  --footer-text: #F7FAFD;
+
+  --theme-toggle-bg: #2B3C55;
+  --theme-toggle-border: #4F9FFF;
+  --toggle-slider-bg: #13263F;
 }
 
 html,
@@ -24,6 +56,7 @@ body {
   width: 100%;
   height: 100%;
   margin: 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 textarea,
