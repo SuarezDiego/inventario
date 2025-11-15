@@ -58,15 +58,12 @@ nav {
 .navLink.active {
   color: var(--azure-400);
   font-weight: bold;
-  background-color: rgba(79, 159, 255, 0.1);
 }
 
 .navLink:hover {
   color: var(--azure-400);
-  background-color: rgba(79, 159, 255, 0.1);
 }
 
-/* Estilo mejorado del botón de tema */
 .themeToggle {
   position: relative;
   width: 56px;
