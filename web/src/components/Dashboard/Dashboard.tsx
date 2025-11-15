@@ -11,40 +11,40 @@ import { FaSpinner } from 'react-icons/fa';
  * @returns El componente Dashboard que muestra una lista de items y un item activo.
  */
 export const Dashboard: React.FC = () => {
-    const { items, isLoading } = useFetchItems();
-    const [activeItem, setActiveItem] = useState<ItemData | null>(null);
+	const { items, isLoading } = useFetchItems();
+	const [activeItem, setActiveItem] = useState<ItemData | null>(null);
 
-    const activateItem = (item: ItemData) => {
-        setActiveItem(item);
-    };
+	const activateItem = (item: ItemData) => {
+		setActiveItem(item);
+	};
 
-    useEffect(() => {
-        if (items.length > 0 && !activeItem) {
-            setActiveItem(items[0]);
-        }
-    }, [items]);
+	useEffect(() => {
+		if (items.length > 0 && !activeItem) {
+			setActiveItem(items[0]);
+		}
+	}, [items]);
 
-    return (
-        <div className="dashboard-grid">
-            {isLoading ? (
-                <div className="loading-container">
-                    <FaSpinner className="loading-icon" />
-                    <p>Cargando...</p>
-                </div>
-            ) : items.length === 0 ? (
-                <div className="no-items-container">
-                    <p>No hay elementos disponibles.</p>
-                </div>
-            ) : (
-                <>
-                    <div className="g-container">
-                        <ItemList items={items} activeItem={activeItem} activateItem={activateItem} />
-                    </div>
-                    <div className="g-container">
-                        {activeItem && <Item {...activeItem} />}
-                    </div>
-                </>
-            )}
-        </div>
-    );
+	return (
+		<div className="dashboard-grid">
+			{isLoading ? (
+				<div className="loading-container">
+					<FaSpinner className="loading-icon" />
+					<p>Cargando...</p>
+				</div>
+			) : items.length === 0 ? (
+				<div className="no-items-container">
+					<p>No hay elementos disponibles.</p>
+				</div>
+			) : (
+				<>
+					<div className="g-container">
+						<ItemList items={items} activeItem={activeItem} activateItem={activateItem} />
+					</div>
+					<div className="g-container">
+						{activeItem && <Item {...activeItem} />}
+					</div>
+				</>
+			)}
+		</div>
+	);
 };
