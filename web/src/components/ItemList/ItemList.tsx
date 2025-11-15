@@ -6,7 +6,7 @@ import type { ItemData } from '../../models/ItemData';
 interface ItemListProps {
   items: ItemData[];
   activeItem: ItemData | null;
-  activateItem: Function;
+  activateItem: (item: ItemData) => void;
 }
 
 /**

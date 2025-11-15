@@ -7,7 +7,6 @@ import type { ItemData } from "../../models/ItemData";
  */
 export const getItems = async (): Promise<ItemData[]> => {
   try {
-
     if (!API_URL) {
       throw new Error("La variable de entorno VITE_API_URL no está definida.");
     }
@@ -27,6 +26,7 @@ export const getItems = async (): Promise<ItemData[]> => {
 
     return data;
   } catch (error) {
+    console.error("Error en getItems:", error);
     return [];
   }
 };

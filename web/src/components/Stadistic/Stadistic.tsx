@@ -1,6 +1,7 @@
 import React from 'react';
 import { Pie } from 'react-chartjs-2';
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
+import { useTheme } from '../../hooks/useTheme';
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 
@@ -17,6 +18,7 @@ interface StadisticProps {
  * @returns El componente Stadistic que muestra un gráfico circular con las estadísticas de inventario.
  */
 export const Stadistic: React.FC<StadisticProps> = ({ showcase, warehouse, sales, in_delivery }) => {
+  const { theme } = useTheme();
   const values = [showcase, warehouse, sales, in_delivery];
   const total = values.reduce((acc, value) => acc + value, 0);
 
@@ -42,38 +44,25 @@ export const Stadistic: React.FC<StadisticProps> = ({ showcase, warehouse, sales
     ],
   };
 
+  interface ChartContext {
+    raw: unknown;
+  }
+
+  const textColor = theme === 'dark' ? '#ffffff' : '#000000';
+
   const chartOptions = {
     plugins: {
       tooltip: {
         callbacks: {
-          label: (context: any) => {
-            const value = context.raw || 0;
+          label: (context: ChartContext) => {
+            const value = (context.raw as number) || 0;
             return `${value}`;
           },
         },
       },
       legend: {
         labels: {
-          generateLabels: (chart: any) => {
-            const data = chart.data;
-            return data.labels.map((label: string, index: number) => ({
-              text: `${label}: ${data.datasets[0].data[index]}`,
-              fillStyle: data.datasets[0].backgroundColor[index],
-              strokeStyle: data.datasets[0].borderColor[index],
-              lineWidth: data.datasets[0].borderWidth,
-              hidden: chart.getDatasetMeta(0).data[index].hidden || false,
-              index,
-            }));
-          },
-          boxWidth: 20,
-          padding: 10,
-        },
-        onClick: (_e: any, legendItem: any, legend: any) => {
-          const index = legendItem.index;
-          const chart = legend.chart;
-          const meta = chart.getDatasetMeta(0);
-          meta.data[index].hidden = !meta.data[index].hidden;
-          chart.update();
+          color: textColor,
         },
       },
     },

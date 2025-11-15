@@ -22,7 +22,7 @@ export const Dashboard: React.FC = () => {
 		if (items.length > 0 && !activeItem) {
 			setActiveItem(items[0]);
 		}
-	}, [items]);
+	}, [activeItem, items]);
 
 	return (
 		<div className="dashboard-grid">
