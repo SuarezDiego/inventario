@@ -1,5 +1,6 @@
 import { API_URL } from "../../config";
 import type { ItemData } from "../../models/ItemData";
+import { checkAPI } from "../utils/checkAPI";
 
 /**
  * Obtiene una lista de items desde la API.
@@ -7,9 +8,7 @@ import type { ItemData } from "../../models/ItemData";
  */
 export const getItems = async (): Promise<ItemData[]> => {
   try {
-    if (!API_URL) {
-      throw new Error("La variable de entorno VITE_API_URL no está definida.");
-    }
+    checkAPI();
 
     const url = `${API_URL}/items/`.trim();
     const response = await fetch(url);
