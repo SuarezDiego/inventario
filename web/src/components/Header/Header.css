@@ -1,6 +1,6 @@
 .header {
-  background-color: var(--navy-900);
-  color: var(--ice-50);
+  background-color: var(--header-bg);
+  color: var(--header-text);
   box-sizing: border-box;
   padding: 10px 20px;
   display: flex;
@@ -11,6 +11,8 @@
   position: sticky;
   top: 0;
   z-index: 100;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 nav {
@@ -19,26 +21,105 @@ nav {
 
 .title {
   margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
 }
 
 .navList {
   list-style: none;
   display: flex;
+  align-items: center;
   margin: 0;
   padding: 0;
+  gap: 10px;
 }
 
 .navLink {
   margin-left: 15px;
-  color: var(--ice-100);
+  color: var(--header-text);
   text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
 }
 
 .navLink.active {
   color: var(--azure-400);
   font-weight: bold;
+  background-color: rgba(79, 159, 255, 0.1);
 }
 
 .navLink:hover {
   color: var(--azure-400);
+  background-color: rgba(79, 159, 255, 0.1);
+}
+
+/* Estilo mejorado del botón de tema */
+.themeToggle {
+  position: relative;
+  width: 56px;
+  height: 28px;
+  background-color: var(--theme-toggle-bg);
+  border: 2px solid var(--theme-toggle-border);
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-right: 15px;
+  padding: 0;
+}
+
+.themeToggle:hover {
+  box-shadow: 0 0 12px rgba(79, 159, 255, 0.4);
+  transform: scale(1.05);
+}
+
+.themeToggle:active {
+  transform: scale(0.95);
+}
+
+.sun-icon,
+.moon-icon {
+  font-size: 14px;
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  transition: opacity 0.3s ease;
+  z-index: 2;
+}
+
+.sun-icon {
+  opacity: 1;
+}
+
+.moon-icon {
+  opacity: 0;
+}
+
+:is(html.dark) .sun-icon {
+  opacity: 0;
+}
+
+:is(html.dark) .moon-icon {
+  left: 33px;
+  opacity: 1;
+}
+
+.toggle-slider {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: var(--toggle-slider-bg);
+  border-radius: 50%;
+  left: 4px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: left 0.3s cubic-bezier(0.4, 0.2, 0.2, 0.8);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+:is(html.dark) .toggle-slider {
+  left: 32px;
 }
