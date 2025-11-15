@@ -26,6 +26,11 @@ Una vez que el servidor esté en funcionamiento, puedes probar la API en la sigu
 
 # WEB:
 
+## Requisitos
+
+- **Node**: Versión 20.19.5
+- **Yarn**: Versión 1.22.22
+
 ## Instalación de react
    ```bash
    yarn install
